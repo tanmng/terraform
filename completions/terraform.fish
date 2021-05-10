@@ -78,7 +78,7 @@ end
 
 
 set terraform_alias tf
-alias $terraform_alias "~/bin/terraform"
+alias $terraform_alias (which terraform)
 
 complete -x -c $terraform_alias -n '__fish_terraform_needs_command' -l 'version' -s 'v' -d 'Display version number and check for update'
 complete -x -c $terraform_alias -n '__fish_terraform_needs_command' -l 'help' -s 'h' -d 'Display help message'
